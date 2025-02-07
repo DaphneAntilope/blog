@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.php">Mon Blog</a></h1>
+        <h1><a href="..\accueil_blog.php">Mon Blog</a></h1>
         <nav>
             <ul>
                 <li><a href="accueil_blog.php">Liste d'articles</a></li>
@@ -18,19 +18,21 @@
     </header>
 
     <main>
+        <?php include_once "config_article.php"?>
+
         <article>
-            <h2><?php echo htmlspecialchars($article['titre'] ?? 'Titre de l\'article'); ?></h2>
-            <p class="meta">
-                Publié le <?php echo date('d/m/Y', strtotime($article['date_publication'])); ?> par <?php echo htmlspecialchars($article['auteur']); ?>
-            </p>
-            <div class="contenu-article">
-                <?php echo nl2br(htmlspecialchars($article['contenu'] ?? 'Contenu de l\'article')); ?>
-            </div>
-            <?php if (!empty($article['image'])): ?>
-                <div class="image-article">
-                    <img src="<?php echo htmlspecialchars($article['image']); ?>" alt="Image de l'article">
+                <h2><?php echo htmlspecialchars($article['titre']); ?></h2>
+                <p class="meta">
+                    Publié le <?php echo date('d/m/Y', strtotime($article['date_publication'])); ?> par <?php echo htmlspecialchars($article['auteur']); ?>
+                </p>
+                <div class="contenu-article">
+                    <?php echo nl2br(htmlspecialchars($article['contenu'])); ?>
                 </div>
-            <?php endif; ?>
+                <?php if (!empty($article['image'])): ?>
+                    <div class="image-article">
+                        <img src="<?php echo htmlspecialchars($article['image']); ?>" alt="Image de l'article">
+                    </div>
+                <?php endif; ?>
         </article>
 
         <section id="commentaires">

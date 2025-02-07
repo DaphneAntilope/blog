@@ -12,9 +12,9 @@
             <h1>Bienvenue sur mon blog</h1>
             <nav>
                 <ul>
-                    <li><a href="accueil_blog.php">Liste d'articles</a></li>
+                    <li><a href="liste_articles.php">Liste d'articles</a></li>
                     <li><a href="admin.php">Admin</a></li>
-                    <li><a href="ajout_article.php">Ajouter un article</a></li>
+                    <li><a href="ajout_article\ajout_article.php">Ajouter un article</a></li>
                 </ul>
             </nav>
         </header>
