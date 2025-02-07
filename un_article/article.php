@@ -21,18 +21,16 @@
         <?php include_once "config_article.php"?>
 
         <article>
-                <h2><?php echo htmlspecialchars($article['titre']); ?></h2>
-                <p class="meta">
-                    Publié le <?php echo date('d/m/Y', strtotime($article['date_publication'])); ?> par <?php echo htmlspecialchars($article['auteur']); ?>
-                </p>
-                <div class="contenu-article">
-                    <?php echo nl2br(htmlspecialchars($article['contenu'])); ?>
+            <h2><?php echo htmlspecialchars($article['titre'] ?? 'Titre inconnu'); ?></h2>
+            <p class="meta">Publié le <?php echo date('d/m/Y', strtotime($article['date_publication'] ?? '')); ?> par <?php echo htmlspecialchars($article['auteur'] ?? 'Auteur inconnu'); ?></p>
+            <div class="contenu-article">
+                <?php echo nl2br(htmlspecialchars($article['contenu'] ?? 'Contenu non disponible')); ?>
+            </div>
+            <?php if (!empty($article['image'])): ?>
+                <div class="image-article">
+                    <img src="<?php echo htmlspecialchars($article['image'] ?? ''); ?>" alt="Image de l'article">
                 </div>
-                <?php if (!empty($article['image'])): ?>
-                    <div class="image-article">
-                        <img src="<?php echo htmlspecialchars($article['image']); ?>" alt="Image de l'article">
-                    </div>
-                <?php endif; ?>
+            <?php endif; ?>
         </article>
 
         <section id="commentaires">
