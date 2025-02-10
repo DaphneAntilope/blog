@@ -1,4 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
+<?php
 // Inclure le fichier de connexion à la base de données
 include '..\database\connex_bdd.php';
 

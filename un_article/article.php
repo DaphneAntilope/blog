@@ -18,9 +18,9 @@
     </header>
 
     <main>
-        <?php include_once "config_article.php"?>
+        <?php include 'config_article.php';?>
 
-        <article>
+        <article> 
             <h2><?php echo htmlspecialchars($article['titre'] ?? 'Titre inconnu'); ?></h2>
             <p class="meta">Publié le <?php echo date('d/m/Y', strtotime($article['date_publication'] ?? '')); ?> par <?php echo htmlspecialchars($article['auteur'] ?? 'Auteur inconnu'); ?></p>
             <div class="contenu-article">
@@ -33,9 +33,10 @@
             <?php endif; ?>
         </article>
 
+
+        <!-- Zone de commentaires -->
         <section id="commentaires">
             <h3>Commentaires</h3>
-            <!-- Affichage des commentaires -->
             <?php if (!empty($commentaires)): ?>
                 <?php foreach ($commentaires as $commentaire): ?>
                     <div class="commentaire">
@@ -50,7 +51,7 @@
             <!-- Formulaire d'ajout de commentaire -->
             <h4>Ajouter un commentaire</h4>
             <form action="ajouter_commentaire.php" method="POST">
-                <input type="hidden" name="id_article" value="<?php echo $article['id_article']; ?>">
+                <input type="hidden" name="id_article" value="<?php echo $article['id_article'] ?? ''; ?>">
                 <div>
                     <label for="pseudo">Pseudo :</label><br>
                     <input type="text" id="pseudo" name="pseudo" required>

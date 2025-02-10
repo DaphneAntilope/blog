@@ -1,5 +1,5 @@
 -- Création de la base de données
-CREATE DATABASE mon_blog
+CREATE DATABASE mon_blog;
 
 USE mon_blog;
 
@@ -43,3 +43,7 @@ CREATE TABLE commentaires (
     FOREIGN KEY (id_article) REFERENCES articles(id_article) ON DELETE CASCADE,
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateurs(id_utilisateur) ON DELETE CASCADE
 );
+
+
+ALTER TABLE articles
+ADD COLUMN image VARCHAR(255) DEFAULT NULL;
