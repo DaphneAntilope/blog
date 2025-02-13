@@ -32,10 +32,10 @@
             <img src="..\visuels\logo_blog_color.png" alt="logo du blog">
             <nav>
                 <ul>
-                    <li><a href="..\index.php">Accueil</a></li>
-                    <li><a href="tous_les_articles\les_articles.php">Liste d'articles</a></li>
-                    <li><a href="ajout_article\ajout_article.php">Ajouter un article</a></li>
-                    <li><a href="connexion.php">Se connecter</a></li>
+                    <li><a href="../index.php">Accueil</a></li>
+                    <li><a href="tous_les_articles\les_articles.php">Les articles</a></li>
+                    <li><a href="../form_ajout_article/ajout_article.php">Ajouter un article</a></li>
+                    <li><a href="../connexion_admin\connexion.php">Se connecter</a></li>
                 </ul>
             </nav>
         </header>

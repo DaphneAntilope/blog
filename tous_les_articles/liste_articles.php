@@ -3,9 +3,9 @@
     $page_name = basename($_SERVER['PHP_SELF'], ".php");
 
     if ($page_name == 'les_articles') {
-        echo include_once "..\database\connex_bdd.php";
+        include_once "..\database\connex_bdd.php";
     } else {
-        echo include_once "database\connex_bdd.php";
+        include_once "database\connex_bdd.php";
     }
 
             // Requête pour récupérer les articles
@@ -23,6 +23,5 @@
                 echo "<p>Aucun article disponible pour le moment.</p>";
             }
             $connexion->close();
-            ?>
-        </ul>
-    </main>
+?>
+
