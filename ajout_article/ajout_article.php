@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ajouter un nouvel article</title>
-        <link rel="stylesheet" href="ajout_article.css">
-        <script src="https://cdn.tiny.cloud/1/vtoaw4icl2qa7rhhcu8v58zx1inrf17493vi2oe4zmu9ce3g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-        <script>
-            tinymce.init({
-                selector: '#contenu',
-                language: 'fr_FR',
-                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-                toolbar_mode: 'floating',
-                toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | link image',
-                branding: false
-            });
-        </script>
+<?php require '..\includes\header.php'?>
 
-    </head>
-
-    <body>
-        <header>
-            <h1>Ajouter un Nouvel Article</h1>
-            <nav>
-                <ul>
-                    <li><a href="accueil_blog.php">Liste d'articles</a></li>
-                    <li><a href="admin.php">Admin</a></li>
-                    <li><a href="ajout_article\ajout_article.php">Ajouter un article</a></li>
-                </ul>
-            </nav>
-        </header>
+<script src="https://cdn.tiny.cloud/1/vtoaw4icl2qa7rhhcu8v58zx1inrf17493vi2oe4zmu9ce3g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+        tinymce.init({
+            selector: '#contenu',
+            language: 'fr_FR',
+            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar_mode: 'floating',
+            toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | link image',
+            branding: false
+        });
+</script>
 
         <form action="..\ajout_article\publier_article.php" method="POST" enctype="multipart/form-data">
             <div>

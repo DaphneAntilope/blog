@@ -5,7 +5,7 @@
         case 'index':
             $h1_text = 'Bienvenue sur mon blog';
             break;
-        case 'liste_articles':
+        case 'les_articles':
             $h1_text = 'Les articles';
             break;
         case 'ajout_article':
@@ -33,7 +33,7 @@
             <nav>
                 <ul>
                     <li><a href="..\index.php">Accueil</a></li>
-                    <li><a href="..\liste_articles.php">Liste d'articles</a></li>
+                    <li><a href="tous_les_articles\les_articles.php">Liste d'articles</a></li>
                     <li><a href="ajout_article\ajout_article.php">Ajouter un article</a></li>
                     <li><a href="connexion.php">Se connecter</a></li>
                 </ul>
