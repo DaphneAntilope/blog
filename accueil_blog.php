@@ -4,7 +4,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Le blog</title>
-        <link rel="stylesheet" href="accueil_blog.css">
     </head>
 
     <body>
