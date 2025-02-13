@@ -1,5 +1,3 @@
-<?php require '..\includes\header.php'?>
-
 <script src="https://cdn.tiny.cloud/1/vtoaw4icl2qa7rhhcu8v58zx1inrf17493vi2oe4zmu9ce3g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
         tinymce.init({
@@ -12,7 +10,7 @@
         });
 </script>
 
-        <form action="..\ajout_article\publier_article.php" method="POST" enctype="multipart/form-data">
+        <form action="form_ajout_article\publier_article.php" method="POST" enctype="multipart/form-data">
             <div>
                 <label for="titre">Titre de l'article :</label><br>
                 <input type="text" id="titre" name="titre" required>

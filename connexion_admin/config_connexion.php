@@ -1,8 +1,5 @@
 <?php
-// Activer l'affichage des erreurs pour le débogage
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+session_start(); 
 
 // Inclure le fichier de connexion à la base de données
 include '../database/connex_bdd.php'; // Chemin relatif à ton fichier de connexion

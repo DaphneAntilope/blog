@@ -8,9 +8,6 @@
         case 'les_articles':
             $h1_text = 'Les articles';
             break;
-        case 'ajout_article':
-            $h1_text = 'Ajouter un article';
-            break;
         case 'connexion':
             $h1_text = 'Se connecter';
             break;
@@ -34,7 +31,6 @@
                 <ul>
                     <li><a href="../index.php">Accueil</a></li>
                     <li><a href="tous_les_articles\les_articles.php">Les articles</a></li>
-                    <li><a href="../form_ajout_article/ajout_article.php">Ajouter un article</a></li>
                     <li><a href="../connexion_admin\connexion.php">Se connecter</a></li>
                 </ul>
             </nav>
