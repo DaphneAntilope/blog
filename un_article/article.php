@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title><?php echo htmlspecialchars($article['titre'] ?? 'Article inconnu'); ?> - Mon Blog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1><a href="index.php">Mon Blog</a></h1>
-        <nav>
-            <ul>
-                <li><a href="liste_articles.php">Liste d'articles</a></li>
-                <li><a href="admin.php">Admin</a></li>
-                <li><a href="ajout_article\ajout_article.php">Ajouter un article</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php require '..\includes\header.php'?>
 
     <?php include_once "config_article.php"?>
 

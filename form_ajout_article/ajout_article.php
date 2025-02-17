@@ -10,7 +10,7 @@
         });
 </script>
 
-        <form action="form_ajout_article\publier_article.php" method="POST" enctype="multipart/form-data">
+        <form action="../form_ajout_article/publier_article.php" method="POST" enctype="multipart/form-data">
             <div>
                 <label for="titre">Titre de l'article :</label><br>
                 <input type="text" id="titre" name="titre" required>
