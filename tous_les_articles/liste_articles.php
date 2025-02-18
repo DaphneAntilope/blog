@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Accueil du Blog</title>
-    <link rel="stylesheet" href="tous_les_articles\liste_articles_styles.css"> <!-- Inclure le fichier CSS -->
+    <!-- Inclure le fichier CSS -->
 </head>
+
 <body>
     <div class="container">
         <?php
@@ -13,12 +15,15 @@
 
         switch ($page_name) {
             case 'les_articles':
+                echo '<link rel="stylesheet" href="..\tous_les_articles\liste_articles_styles.css">';
                 include_once "..\database\connex_bdd.php";
                 break;
             case 'espace_admin':
+                echo '<link rel="stylesheet" href="..\tous_les_articles\liste_articles_styles.css">';
                 include_once "..\database\connex_bdd.php";
                 break;
             default:
+                echo '<link rel="stylesheet" href="..\tous_les_articles\liste_articles_styles.css">';
                 include_once "database\connex_bdd.php";
         }
 
@@ -41,4 +46,5 @@
         ?>
     </div>
 </body>
+
 </html>
