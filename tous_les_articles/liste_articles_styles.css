@@ -4,20 +4,26 @@ body {
     margin: 0;
     padding: 0;
 }
-h1
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+
 }
 
 /* Styles pour les articles */
 .article {
+    width: 30%;
+    height: auto;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px 20px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -57,4 +63,27 @@ h1
 
 .btn-lire-article:hover {
     background-color: #0056b3;
+}
+
+
+/* --------- Responsive pour liste articles ----- */
+@media screen and (max-width: 576px) {
+    body {
+      background-color: blue;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }     
+
+    .article {
+        width: 90%;
+    }
+
+    .btn-lire-article {
+        background-color: yellow;
+    }
+
+
+
 }

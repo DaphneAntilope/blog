@@ -1,0 +1,51 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styles pour l'article */
+article {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.contenu-article {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.image-article {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+

@@ -48,3 +48,17 @@ nav ul li a{
 nav ul li a:hover{
  color: white;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 4%;
+    text-transform:uppercase;
+    color: rgb(65, 127, 243);
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        display: none;
+    }
+
+}
