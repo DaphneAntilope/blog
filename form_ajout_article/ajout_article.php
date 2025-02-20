@@ -20,7 +20,7 @@
                 <label for="contenu">Contenu :</label><br>
                 <textarea id="contenu" name="contenu" rows="10" cols="50" required></textarea>
             </div>
-
+            <br>
             <div>
                 <label for="categorie">Catégorie :</label><br>
                 <select id="categorie" name="categorie" required>
@@ -40,6 +40,7 @@
                 <label for="image">Image de mise en avant :</label><br>
                 <input type="file" id="image" name="image" accept="image/*">
             </div>
+            <br>
             <br>
             <div>
                 <input type="submit" value="Publier l'article">

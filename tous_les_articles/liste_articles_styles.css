@@ -50,7 +50,7 @@ body {
     line-height: 1.6;
 }
 
-.btn-lire-article {
+#btn-lire-article {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
@@ -64,6 +64,9 @@ body {
 .btn-lire-article:hover {
     background-color: #0056b3;
 }
+
+
+
 
 
 /* --------- Responsive pour liste articles ----- */

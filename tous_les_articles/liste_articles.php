@@ -34,9 +34,9 @@
             // Affichage de chaque article
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='article'>";
-                echo "<h3><a href='..\article.php?id=" . $row["id_article"] . "'>" . $row["titre"] . "</a></h3>";
+                echo "<h3><a href='../article.php?id=" . $row["id_article"] . "'>" . $row["titre"] . "</a></h3>";
                 echo "<p>" . $row["extrait"] . "</p>";
-                echo "<a href='un_article\article.php?id=" . $row["id_article"] . "' class='btn-lire-article'>Lire l'article</a>";
+                echo "<a href='../un_article/article.php?id=" . $row["id_article"] . "' id='btn-lire-article'>Lire l'article</a>";
                 echo "</div>";
             }
         } else {

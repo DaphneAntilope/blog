@@ -1,5 +1,12 @@
-/* Conteneur principal */
-.container {
+body {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+main {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -71,6 +78,7 @@ section {
     margin-bottom: 40px;
 }
 
+
 /* Messages d'alerte */
 .alert {
     padding: 15px;
@@ -95,17 +103,35 @@ section {
 /* Bouton de suppression d'article */
 .delete-link {
     width: 10px;
-    height: 30px;
+    height: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-align: center;
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 }
 
-li {
-    list-style: none;
-    display: block;
+#gestion_articles ul {
+    background-color: green;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+#gestion_articles ul li {
+    background-color: yellow;
+    list-style: none;
 }
 
