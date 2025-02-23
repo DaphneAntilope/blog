@@ -43,7 +43,7 @@
         <hr>
 
         <section id="gestion_articles">
-            <h2>Les articles</h2>
+            <h2>Gérer les articles</h2>
             <div>
                 <?php include '..\tous_les_articles\liste_articles.php'?>
             </div>
