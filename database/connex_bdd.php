@@ -1,9 +1,9 @@
 <?php
     // Paramètres de connexion
     $serveur = "localhost";          
-    $utilisateur = "root"; // Nom d'utilisateur MySQL
-    $mot_de_passe = ""; // Mot de passe MySQL
-    $base_de_donnees = "mon_blog";     // Nom de la base de données
+    $utilisateur = "anda8840_daphne_blog"; // Nom d'utilisateur MySQL
+    $mot_de_passe = "Ea610_Da255_Blog25"; // Mot de passe MySQL
+    $base_de_donnees = "anda8840_mon_blog";     // Nom de la base de données
 
     // Création de la connexion
     $connexion = new mysqli($serveur, $utilisateur, $mot_de_passe, $base_de_donnees);

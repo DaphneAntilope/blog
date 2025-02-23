@@ -1,4 +1,4 @@
-<?php require 'includes\header.php'?>
+<?php require 'includes/header.php'?>
 
         <main>
             <ul class="liste-articles">

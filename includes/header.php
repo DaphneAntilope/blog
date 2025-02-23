@@ -30,8 +30,8 @@
             <nav>
                 <ul>
                     <li><a href="../index.php">Accueil</a></li>
-                    <li><a href="tous_les_articles\les_articles.php">Les articles</a></li>
-                    <li><a href="../connexion_admin\connexion.php">Se connecter</a></li>
+                    <li><a href="tous_les_articles/les_articles.php">Les articles</a></li>
+                    <li><a href="../connexion_admin/connexion.php">Se connecter</a></li>
                 </ul>
             </nav>
         </header>
